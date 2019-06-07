@@ -299,6 +299,11 @@ footer {
   margin: 0px;
   padding: 0px 20px;
 }
+@media (min-width: 500px) {
+  .home .mobile-walk-img {
+    display: none;
+  }
+}
 .home .mobile-walk-img img {
   width: 100%;
   height: auto;
@@ -361,6 +366,11 @@ footer {
   width: 100%;
   padding: 20px 10px;
   height: 20px;
+}
+@media (min-width: 500px) {
+  .home .walk .mobile-button {
+    display: none;
+  }
 }
 .home .walk .mobile-button button {
   height: 30px;
