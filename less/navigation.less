@@ -6,10 +6,15 @@
     height:81px;
     justify-content: space-around;
     align-items: center;
-    background-color: aqua;
     margin:0px 360px;
     background-color: @nav-bg;
     color: @nav-font;
+    @media @phone{
+        width:100%;
+        margin: 0px;
+        align-content: center;
+        padding:0px;
+    }
     h1{
         font-size:3.2rem;
     }
