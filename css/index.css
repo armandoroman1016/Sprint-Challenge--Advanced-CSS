@@ -137,6 +137,12 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
 }
+@media (max-width:500px) {
+  html,
+  body {
+    width: 100%;
+  }
+}
 h1,
 h2,
 h3,
@@ -201,6 +207,14 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width:500px) {
+  footer {
+    width: 100%;
+    margin: 0px;
+    height: 100%;
+    margin-top: 20px;
+  }
+}
 .home {
   width: 100;
   height: 100%;
@@ -209,10 +223,8 @@ footer {
 @media (max-width:500px) {
   .home {
     display: flex;
-    width: 100%;
-    height: 100%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     padding: 5px;
   }
@@ -282,6 +294,16 @@ footer {
 .home .visit-planets p {
   margin-top: 13px;
 }
+.home .mobile-walk-img {
+  width: 100%;
+  margin: 0px;
+  padding: 0px 20px;
+}
+.home .mobile-walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 .home .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
@@ -289,8 +311,25 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width:500px) {
+  .home .walk {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px;
+    margin-top: 0px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -298,12 +337,32 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+@media (max-width:500px) {
+  .home .walk .walk-text .btn {
+    display: none;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width:500px) {
+  .home .walk .walk-img {
+    display: none;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .walk .mobile-button {
+  height: 30px;
+  width: 100%;
+  padding: 20px 10px;
+  height: 20px;
+}
+.home .walk .mobile-button button {
+  height: 30px;
+  width: 100%;
 }
