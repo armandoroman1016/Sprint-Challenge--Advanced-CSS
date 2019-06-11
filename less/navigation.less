@@ -1,1 +1,31 @@
 // Navigation code here
+.nav{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:81px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: @nav-bg;
+    color: @nav-font;
+    @media @phone{
+        width:100%;
+        position: relative;
+        right:0px;
+        margin: 0px;
+        align-content: center;
+        padding:0px;
+    }
+    h1{
+        font-size:3.2rem;
+    }
+    nav{
+        display:flex;
+        height:auto;
+        width:300px;
+        justify-content: space-between;
+        font-size:1.3rem;
+        font-weight:600;
+    }
+}
